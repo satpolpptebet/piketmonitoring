@@ -1,45 +1,78 @@
+
+buatkan kode html untuk menerangkan bahwa website pindah ke link : laporanpiket.satpolpp.my.id dan dapat mengklik link tersebut
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PIKET MONITORING</title>
-  <link rel="icon" href=policeman.png />
+  <title>Website Pindah</title>
+
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #eee;
-      overflow: hidden; /* Mencegah scroll ganda */
+    body{
+      margin:0;
+      padding:0;
+      font-family: Arial, sans-serif;
+      background:#f4f6f9;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
     }
 
-    .iframe-container {
-      width: 100%;
-      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
-      overflow: hidden;
+    .container{
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      text-align:center;
+      max-width:500px;
     }
 
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: none;
+    h1{
+      color:#d32f2f;
+      margin-bottom:15px;
+    }
+
+    p{
+      font-size:18px;
+      color:#444;
+      margin-bottom:25px;
+    }
+
+    a{
+      display:inline-block;
+      padding:12px 25px;
+      background:#1976d2;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    a:hover{
+      background:#0d47a1;
     }
   </style>
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe
-      id="app"
-      src="https://script.google.com/macros/s/AKfycbw0eAxBPM_h2S6i7kk6Mvr9UWCP4HXY6lGq2F8Wywigb-NvbPf01FmboqdCAbimxyMsEw/exec"
-      scrolling="yes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allow="fullscreen; camera; microphone; display-capture; geolocation;">
-    </iframe>
+
+  <div class="container">
+    <h1>Website Telah Pindah</h1>
+
+    <p>
+      Website ini telah berpindah ke alamat baru:
+      <br><br>
+      <strong>laporanpiket.satpolpp.my.id</strong>
+    </p>
+
+    <a href="https://laporanpiket.satpolpp.my.id" target="_blank">
+      Kunjungi Website Baru
+    </a>
   </div>
+
 </body>
 </html>
+
+
